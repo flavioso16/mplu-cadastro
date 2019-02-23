@@ -65,11 +65,11 @@
 					<appName>mplu-cadastro</appName>
 					<includeTarget>false</includeTarget>
 					<includes>
-						<include>${project.build.directory}/${project.build.finalName}.jar</include>
+						<include>${project.build.finalName}.jar</include>
 					</includes>
 					<jdkVersion>${java.version}</jdkVersion>
 					<processTypes>
-						<web>java $JAVA_OPTS --server.port=8080 -jar ${project.build.directory}/${project.build.finalName}.jar</web>
+						<web>java $JAVA_OPTS -jar ${project.build.finalName}.jar</web>
 					</processTypes>
 				</configuration>
 			</plugin>
